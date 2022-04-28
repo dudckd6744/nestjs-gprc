@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package person;
 
-message BattleField {
+message PersonTest {
   int32  battle_field_id = 1;
   string name            = 2;
   string description     = 3;
