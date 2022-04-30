@@ -1,9 +1,16 @@
 syntax = "proto3";
 
-package person;
+package Person;
 
-message PersonTest {
-  int32  battle_field_id = 1;
-  string name            = 2;
-  string description     = 3;
+service AppController {
+
+    rpc Person(Request) returns(Response);
+}
+
+message Request {
+     double id =1;
+}
+
+message Response {
+    int32 data = 1;
 }

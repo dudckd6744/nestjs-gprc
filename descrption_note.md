@@ -1,7 +1,14 @@
 ### GRPC
 
-<--
-GRPC 란? 
-포스트맨으로 테스트 방법
+### 2022-04-30
+    - GRPC learning stage
+        - RPC
+            - Stub
+            - Mashalling
+            - IDL
+            - osi 7 layer
+        - Source of truth
+        - http2
+        - protocol buffer
 
--->
+## TODO
