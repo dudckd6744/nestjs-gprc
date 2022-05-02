@@ -5,7 +5,7 @@
         - RPC
             - Stub
             - Mashalling
-            - IDL
+            - IDL안
             - osi 7 layer
         - Source of truth
         - http2
@@ -21,4 +21,8 @@
             한 언어에 국한되지 않는 언어 중립적인 방법으로 인터페이스를 표현함으로써, 같은 언어로 사용하지않은 소프트웨어 컴포넌트 사이의 통신을 가능케한다.
 
 
+### 2022-05-02
+    - http2 기술 이해
+        - http / http2 차이
+        - http2 docs reading
 ## TODO
