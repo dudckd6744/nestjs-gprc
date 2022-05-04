@@ -8,9 +8,9 @@ service AppController {
 }
 
 message Request {
-     double id =1;
+    double id = 1;
 }
 
 message Response {
-    int32 data = 1;
+    string data = 1;
 }

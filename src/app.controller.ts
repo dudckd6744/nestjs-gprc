@@ -1,3 +1,4 @@
+import { Metadata } from '@grpc/grpc-js';
 import { Controller, Get } from '@nestjs/common';
 import { GrpcMethod } from '@nestjs/microservices';
 import { AppService } from './app.service';
@@ -11,8 +12,12 @@ export class AppController {
   //   return this.appService.getHello();
   // }
 
-  @GrpcMethod('AppController', 'Person')
-  person(id: number, data: any) {
-    // return {data: this.}
+  @GrpcMethod('AppController')
+  async person(id: number, data: Metadata) {
+    console.log(id, data);
+
+    const test = await this.appService.getHello();
+    console.log(test);
+    return test;
   }
 }

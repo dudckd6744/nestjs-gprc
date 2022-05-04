@@ -25,4 +25,8 @@
     - http2 기술 이해
         - http / http2 차이
         - http2 docs reading
+
+### 2022-05-04
+    - GRPC Postman 통신 테스트
+
 ## TODO
