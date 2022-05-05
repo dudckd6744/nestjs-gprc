@@ -3,7 +3,14 @@ import { Controller, Get } from '@nestjs/common';
 import { GrpcMethod } from '@nestjs/microservices';
 import { AppService } from './app.service';
 
-@Controller()
+interface reqTest {
+  name: string;
+}
+interface resTest {
+  name: string;
+  message: string;
+}
+@Controller('test')
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
@@ -13,11 +20,9 @@ export class AppController {
   // }
 
   @GrpcMethod('AppController')
-  async person(id: number, data: Metadata) {
-    console.log(id, data);
-
-    const test = await this.appService.getHello();
-    console.log(test);
-    return test;
+  async Test(name: reqTest, data: Metadata): Promise<resTest> {
+    console.log(name);
+    return this.appService.getHello();
+    return { ...name, message: 'hellow Word!' };
   }
 }

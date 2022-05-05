@@ -4,13 +4,14 @@ package Person;
 
 service AppController {
 
-    rpc Person(Request) returns(Response);
+    rpc Test(HelloRequest) returns(HelloResponse) {}
 }
 
-message Request {
-    double id = 1;
+message HelloRequest {
+    string name = 1;
 }
 
-message Response {
-    string data = 1;
+message HelloResponse {
+    string message = 1;
+    string name = 3;
 }
