@@ -29,4 +29,11 @@
 ### 2022-05-04
     - GRPC Postman 통신 테스트
 
+### 2022-05-05
+    - GRPC Postman 
+        - 포스트맨 통신 성공
+
+### 2022-05-06
+    - GRPC client ,server structure
+        - grpc client nest 서버 기초 구현
 ## TODO
