@@ -22,7 +22,7 @@ export class AppController {
   @GrpcMethod('AppController')
   async Test(name: reqTest, data: Metadata): Promise<resTest> {
     console.log(name);
-    return this.appService.getHello();
+
     return { ...name, message: 'hellow Word!' };
   }
 }
