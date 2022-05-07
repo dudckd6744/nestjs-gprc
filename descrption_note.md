@@ -36,4 +36,8 @@
 ### 2022-05-06
     - GRPC client ,server structure
         - grpc client nest 서버 기초 구현
+
+### 2022-05-07
+    - GRPC client ,server structure
+        - GRPC client , server 구동
 ## TODO
