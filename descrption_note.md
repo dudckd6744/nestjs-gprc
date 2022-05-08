@@ -41,5 +41,9 @@
     - GRPC client ,server structure
         - GRPC client , server 구동
         - client , server 간 연동 완료
-            - test 완료 
+            - test 완료
+
+### 2022-05-07
+    - GRPC client reSetting
+    
 ## TODO
