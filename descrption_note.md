@@ -43,7 +43,9 @@
         - client , server 간 연동 완료
             - test 완료
 
-### 2022-05-07
+### 2022-05-08
     - GRPC client reSetting
-    
+    - client , server 간 연동 완료
+        - test 완료
+
 ## TODO
