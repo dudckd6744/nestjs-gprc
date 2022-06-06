@@ -48,4 +48,9 @@
     - client , server 간 연동 완료
         - test 완료
 
+### 2022-06-06
+    - grpc 실무 도입을 위한 설계 방식 검토
+        - client 쪽은 여러 grpc server [여러 proto 파일 호출 가능] 호출 가능한 것 같다.
+        - 반면 server 쪽은 app 실행을 proto 파일을 주입해서 실행하므로 여러 proto 파일을 가질 수 없다.
+
 ## TODO
